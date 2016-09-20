@@ -15,11 +15,11 @@ namespace ConsoleApplication6
             var bonusScore = 0.0;
             if (num > 1000)
             {
-                bonusScore = num * 0.10;
+                bonusScore = num * 0.15;
             }
             else if (num < 1000)
             {
-                bonusScore = num * 0.20;
+                bonusScore = num * 0.25;
             }
             else if (num <= 100)
             {
@@ -27,11 +27,11 @@ namespace ConsoleApplication6
             }
             if (num % 10 == 5)
             {
-                bonusScore += 2;
+                bonusScore += 4;
             }
             else if (num % 2 == 0)
             {
-                bonusScore += 1;
+                bonusScore += 2;
             }
             Console.WriteLine("Bonus score: {0}", bonusScore);
             Console.WriteLine("Total score: {0}", num + bonusScore);
